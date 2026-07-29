@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi horario</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header><div class="brand"><b>J</b> Mi horario</div><span>Periodo 2026-2</span></header>
+      <section class="intro"><p>PLANIFICADOR DE CLASES</p><h1>Arma tu semana, curso por curso.</h1><small>Los bloques se leen del horario oficial. Tu selección se guarda solo en este navegador.</small></section>
+      <section class="layout">
+        <aside><h2>Elige tus cursos</h2><input id="search" placeholder="Código o nombre del curso" aria-label="Buscar curso" /><p id="count">Busca una materia para empezar</p><div id="catalog"></div></aside>
+        <section class="schedule"><div class="schedule-title"><h2>Horario semanal</h2><button id="clear" hidden>Limpiar</button></div><div id="calendar"></div><div id="empty">Selecciona una sección desde el catálogo para comenzar.</div></section>
+      </section>
+      <section id="selected" hidden><h2>Selección actual</h2><div id="selected-list"></div></section>
+    </main>
+    <script src="schedule-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
