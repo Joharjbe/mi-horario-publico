@@ -12,7 +12,7 @@
       <section class="intro"><p>PLANIFICADOR DE CLASES</p><h1>Arma tu semana, curso por curso.</h1><small>Los bloques se leen del horario oficial. Tu selección se guarda solo en este navegador.</small></section>
       <section class="layout">
         <aside><h2>Elige tus cursos</h2><input id="search" placeholder="Código o nombre del curso" aria-label="Buscar curso" /><p id="count">Busca una materia para empezar</p><div id="catalog"></div></aside>
-        <section class="schedule"><div class="schedule-title"><h2>Horario semanal</h2><button id="clear" hidden>Limpiar</button></div><div id="calendar"></div><div id="empty">Selecciona una sección desde el catálogo para comenzar.</div></section>
+        <section class="schedule"><div class="schedule-title"><div><h2>Horario semanal</h2><p id="summary" hidden></p></div><button id="clear" hidden>Limpiar</button></div><div id="conflict-alert" class="conflict-alert" hidden role="alert"></div><div class="legend" aria-label="Leyenda"><span><i class="legend-dot"></i> Un color por curso</span><span><b class="legend-badge virtual">Virtual</b><b class="legend-badge presencial">Presencial</b></span></div><div id="calendar"></div><div id="empty">Selecciona una sección desde el catálogo para comenzar.</div></section>
       </section>
       <section id="selected" hidden><h2>Selección actual</h2><div id="selected-list"></div></section>
     </main>
